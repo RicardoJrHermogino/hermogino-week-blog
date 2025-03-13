@@ -22,7 +22,7 @@ export default function About({ aboutRef }) {
           </Typography>
           
           <Typography variant="body1" paragraph>
-            What sets our blog apart is our commitment to providing practical, hands-on examples alongside theoretical knowledge. Whether you're looking to expand your skillset, solve a coding problem, or simply stay informed about the latest industry developments, we've got you covered.
+            What sets our blog apart is our commitment to providing practical, hands-on examples alongside theoretical knowledge. Whether you&apos;re looking to expand your skillset, solve a coding problem, or simply stay informed about the latest industry developments, we&apos;ve got you covered.
           </Typography>
           
           <Typography variant="body1" paragraph>
