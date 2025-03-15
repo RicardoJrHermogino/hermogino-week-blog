@@ -74,7 +74,7 @@ const Navbar = () => {
                   ml: { xs: 0, md: 15 }
                 }}
               >
-                Brand
+                Hermogino Weekly Blog
               </Typography>
             </Link>
 

@@ -67,12 +67,24 @@ export default function WeeklyBlogSection() {
           }}
         >
           <Typography
-            component="h2"
-            sx={{
-              fontSize: { xs: '1.3rem', sm: '1.8rem', md: '2rem' },
-              fontWeight: 700,
-              color: isDark ? 'text.primary' : '#1e293b',
-              mb: 2
+            variant="h2" 
+            fontWeight="bold" 
+            gutterBottom
+            sx={{ 
+              fontSize: { xs: '2.2rem', md: '2.8rem' },
+              position: 'relative',
+              mb: 5,
+              '&:after': {
+                content: '""',
+                position: 'absolute',
+                bottom: -16,
+                left: '50%',
+                transform: 'translateX(-50%)',
+                width: 80,
+                height: 4,
+                bgcolor: 'primary.main',
+                borderRadius: 2
+              }
             }}
           >
             My Internship Journey

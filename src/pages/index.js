@@ -19,7 +19,7 @@ export default function Home() {
     <>
       <Navbar />
       <Head>
-        <title>Hermogino</title>
+        <title>Hermogino Weekly Blog</title>
         <meta name="description" content="A minimalist and modern homepage" />
       </Head>
 
