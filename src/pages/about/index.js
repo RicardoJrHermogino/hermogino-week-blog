@@ -413,7 +413,7 @@ export default function About({ aboutRef }) {
                   <EventNoteIcon fontSize="medium" />
                 </Avatar>
                 <Typography variant="h5" fontWeight="600" color="primary.main">
-                  Intern's Information
+                  Intern&apos;s Information
                 </Typography>
               </Box>
               
