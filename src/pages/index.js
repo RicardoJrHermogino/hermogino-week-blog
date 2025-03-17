@@ -1,29 +1,46 @@
 import Head from "next/head";
-import { Typography, Button, Box, Container, Grid, Card, CardContent, useTheme } from "@mui/material";
+import { Typography, Button, Box, Container, useTheme } from "@mui/material";
 import Navbar from "./components/navbar";
 import About from "./about";
-import WeeklyBlogSection from "./Blog";
+import WeeklyBlogSection from "./blog";
 import { useRef } from "react";
 
 export default function Home() {
   const theme = useTheme();
   const isDark = theme.palette.mode === 'dark';
-  const aboutRef = useRef(null); // Create a ref to pass to the Services component
+  
+  // Create refs for all sections
+  const heroRef = useRef(null);
+  const aboutRef = useRef(null);
+  const blogRef = useRef(null);
+  const contactRef = useRef(null);
 
-  // Function to handle scrolling to services section
-  const scrollToServices = () => {
-    aboutRef.current.scrollIntoView({ behavior: 'smooth' });
+  // Function to scroll to a section
+  const scrollToSection = (sectionId) => {
+    const sectionRefs = {
+      hero: heroRef,
+      about: aboutRef,
+      blog: blogRef,
+      contact: contactRef
+    };
+    
+    if (sectionRefs[sectionId] && sectionRefs[sectionId].current) {
+      sectionRefs[sectionId].current.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
     <>
-      <Navbar />
+      <Navbar scrollToSection={scrollToSection} />
       <Head>
         <title>Hermogino Weekly Blog</title>
         <meta name="description" content="A minimalist and modern homepage" />
       </Head>
 
+      {/* Hero Section */}
       <Box
+        ref={heroRef}
+        id="hero"
         sx={{
           height: "100vh",
           position: "relative",
@@ -83,7 +100,7 @@ export default function Home() {
 
           <Button
             variant="outlined"
-            onClick={scrollToServices}
+            onClick={() => scrollToSection('about')}
             sx={{
               borderRadius: '50px',
               height: '50px',
@@ -103,30 +120,39 @@ export default function Home() {
         </Box>
       </Box>
 
-      {/* Services Section - Now using the component */}
-      <About aboutRef={aboutRef} />
+      {/* About Section */}
+      <Box ref={aboutRef} id="about">
+        <About />
+      </Box>
 
-      <WeeklyBlogSection/>
+      {/* Blog Section */}
+      <Box ref={blogRef} id="blog">
+        <WeeklyBlogSection />
+      </Box>
 
       {/* Contact Section */}
-      <Box sx={{ py: 8, px: 4, bgcolor: 'background.default' }}>
+      <Box 
+        ref={contactRef}
+        id="contact"
+        sx={{ py: 8, px: 4, bgcolor: 'background.default' }}
+      >
         <Container maxWidth="md">
           <Typography variant="h3" fontWeight="bold" textAlign="center" gutterBottom>
-            Contact Us
+            Contact
           </Typography>
           <Typography variant="h6" textAlign="center" color="text.secondary" sx={{ mb: 4 }}>
-            Get in touch with our team
+            Get in touch
           </Typography>
 
           <Box sx={{ textAlign: "center", my: 4 }}>
             <Typography variant="body1" gutterBottom>
-              Email: contact@example.com
+              Email: ricardohermoginojr@thelewiscollege.edu.ph
             </Typography>
             <Typography variant="body1" gutterBottom>
-              Phone: +1 (123) 456-7890
+              Phone: +639506471431
             </Typography>
             <Typography variant="body1">
-              Address: 123 Main St, City, Country
+              Address: Cogon, Gubat, Sorsogon 
             </Typography>
           </Box>
 
@@ -151,7 +177,7 @@ export default function Home() {
       <Box sx={{ py: 4, bgcolor: isDark ? 'background.paper' : 'black', color: isDark ? 'text.primary' : 'white' }}>
         <Container maxWidth="lg">
           <Typography variant="body2" textAlign="center">
-            © {new Date().getFullYear()} Hermogino. All rights reserved.
+          © {new Date().getFullYear()} Hermogino. All rights reserved.
           </Typography>
         </Container>
       </Box>

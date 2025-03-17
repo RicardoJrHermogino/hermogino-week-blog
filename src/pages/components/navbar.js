@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect, useContext } from 'react';
-import Link from 'next/link';
 import { AppBar, Toolbar, IconButton, Typography, Box, Drawer, List, ListItem, ListItemButton, Container, useTheme } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
@@ -9,7 +8,7 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import { ColorModeContext } from '../_app';
 
-const Navbar = () => {
+const Navbar = ({ scrollToSection }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const theme = useTheme();
@@ -35,11 +34,16 @@ const Navbar = () => {
     setIsOpen(open);
   };
 
+  const handleNavClick = (sectionId) => {
+    scrollToSection(sectionId);
+    setIsOpen(false);
+  };
+
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'Blog', path: '/blog' },
-    { name: 'About', path: '/about' },
-    { name: 'Contact', path: '/contact' }
+    { name: 'Home', sectionId: 'hero' },
+    { name: 'About', sectionId: 'about' },
+    { name: 'Blog', sectionId: 'blog' },
+    { name: 'Contact', sectionId: 'contact' }
   ];
 
   return (
@@ -60,66 +64,65 @@ const Navbar = () => {
         <Container maxWidth="xl" sx={{ px: { xs: 3, sm: 5, md: 8 } }}>
           <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', py: 1 }}>
             {/* Brand Logo with More Left Spacing */}
-            <Link href="/" passHref style={{ textDecoration: 'none' }}>
-              <Typography 
-                variant="h6" 
-                component="div" 
-                sx={{ 
-                  fontWeight: 'bold', 
-                  cursor: 'pointer',
-                  color: isDark 
-                    ? (scrolled ? theme.palette.text.primary : 'white') 
-                    : (scrolled ? '#111' : 'white'),
-                  letterSpacing: '0.5px',
-                  ml: { xs: 0, md: 15 }
-                }}
-              >
-                Hermogino Weekly Blog
-              </Typography>
-            </Link>
+            <Typography 
+              variant="h6" 
+              component="div"
+              onClick={() => handleNavClick('hero')}
+              sx={{ 
+                fontWeight: 'bold', 
+                cursor: 'pointer',
+                color: isDark 
+                  ? (scrolled ? theme.palette.text.primary : 'white') 
+                  : (scrolled ? '#111' : 'white'),
+                letterSpacing: '0.5px',
+                ml: { xs: 0, md: 15 }
+              }}
+            >
+              Hermogino Weekly Blog
+            </Typography>
 
             {/* Desktop Menu with Increased Spacing */}
             <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 10, mr: 15 }}>
               {navLinks.map((link) => (
-                <Link key={link.name} href={link.path} passHref style={{ textDecoration: 'none' }}>
-                  <Typography
-                    variant="body1"
-                    sx={{
+                <Typography
+                  key={link.name}
+                  variant="body1"
+                  onClick={() => handleNavClick(link.sectionId)}
+                  sx={{
+                    color: isDark 
+                      ? (scrolled ? theme.palette.text.primary : 'white') 
+                      : (scrolled ? '#111' : 'white'),
+                    cursor: 'pointer',
+                    fontWeight: 500,
+                    fontSize: '1rem',
+                    padding: '0 8px',
+                    position: 'relative',
+                    '&:hover': { 
                       color: isDark 
+                        ? (scrolled ? theme.palette.text.secondary : 'rgba(255, 255, 255, 0.8)') 
+                        : (scrolled ? '#555' : 'rgba(255, 255, 255, 0.8)')
+                    },
+                    '&:after': {
+                      content: '""',
+                      position: 'absolute',
+                      width: '0',
+                      height: '2px',
+                      bottom: '-4px',
+                      left: '50%',
+                      transform: 'translateX(-50%)',
+                      backgroundColor: isDark 
                         ? (scrolled ? theme.palette.text.primary : 'white') 
                         : (scrolled ? '#111' : 'white'),
-                      cursor: 'pointer',
-                      fontWeight: 500,
-                      fontSize: '1rem',
-                      padding: '0 8px',
-                      position: 'relative',
-                      '&:hover': { 
-                        color: isDark 
-                          ? (scrolled ? theme.palette.text.secondary : 'rgba(255, 255, 255, 0.8)') 
-                          : (scrolled ? '#555' : 'rgba(255, 255, 255, 0.8)')
-                      },
-                      '&:after': {
-                        content: '""',
-                        position: 'absolute',
-                        width: '0',
-                        height: '2px',
-                        bottom: '-4px',
-                        left: '50%',
-                        transform: 'translateX(-50%)',
-                        backgroundColor: isDark 
-                          ? (scrolled ? theme.palette.text.primary : 'white') 
-                          : (scrolled ? '#111' : 'white'),
-                        transition: 'width 0.3s ease'
-                      },
-                      '&:hover:after': {
-                        width: '100%'
-                      },
-                      transition: 'all 0.3s ease'
-                    }}
-                  >
-                    {link.name}
-                  </Typography>
-                </Link>
+                      transition: 'width 0.3s ease'
+                    },
+                    '&:hover:after': {
+                      width: '100%'
+                    },
+                    transition: 'all 0.3s ease'
+                  }}
+                >
+                  {link.name}
+                </Typography>
               ))}
               
               {/* Theme Toggle Button */}
@@ -179,9 +182,7 @@ const Navbar = () => {
             {navLinks.map((link) => (
               <ListItem key={link.name} disablePadding sx={{ my: 2 }}>
                 <ListItemButton 
-                  component={Link} 
-                  href={link.path} 
-                  onClick={toggleDrawer(false)}
+                  onClick={() => handleNavClick(link.sectionId)}
                   sx={{
                     borderRadius: 1,
                     py: 1.5,

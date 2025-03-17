@@ -1,24 +1,25 @@
 import { Box, Container, Typography, Card, CardContent, CardMedia, Chip, useTheme, Button } from '@mui/material';
-import { Calendar, Clock, Code, Briefcase } from 'lucide-react';
+import { useRouter } from 'next/router';
 
 export default function WeeklyBlogSection() {
   const theme = useTheme();
   const isDark = theme.palette.mode === 'dark';
+  const router = useRouter();
   
   // Internship weekly data
   const weeks = [
     {
       id: 1,
-      title: "Getting Started with the Team",
+      title: "Firs Week Training with IClinicSys Encoding",
       category: "1st Week",
-      image: "/picture/week_1.jpg",
-      description: "First week of orientation. Met the team, set up my development environment, and learned about the company's workflow and methodologies."
+      image: "/picture/week_1/week_1.jpg",
+      description: "Started my On-the-Job Training at Gubat Rural Health Unit and Birthing Home under the Local Government Unit of Gubat. Welcomed by Sir Jay-Ar Jarabejo, who trained me in encoding patient records into IClinicSys. Learned to process paper records, interpret handwritten data, and keep up with the fast-paced flow of free healthcare services provided daily to the community."
     },
     {
       id: 2,
       title: "Backend Development Basics",
       category: "2nd Week",
-      image: "/picture/week_1.jpg",
+      image: "/picture/week_2/week_2.jpg",
       description: "Began working on backend development. Learned RESTful API design principles and created my first endpoints with Express.js."
     },
     {
@@ -48,8 +49,55 @@ export default function WeeklyBlogSection() {
       category: "6th Week",
       image: "/picture/week_1.jpg",
       description: "Wrote unit and integration tests for our codebase. Set up CI/CD pipeline and learned about containerization with Docker."
+    },
+    {
+      id: 7,
+      title: "Testing and Deployment",
+      category: "7th Week",
+      image: "/picture/week_1.jpg",
+      description: "Wrote unit and integration tests for our codebase. Set up CI/CD pipeline and learned about containerization with Docker."
+    },
+    {
+      id: 8,
+      title: "Testing and Deployment",
+      category: "8th Week",
+      image: "/picture/week_1.jpg",
+      description: "Wrote unit and integration tests for our codebase. Set up CI/CD pipeline and learned about containerization with Docker."
+    },
+    {
+      id: 9,
+      title: "Testing and Deployment",
+      category: "9th Week",
+      image: "/picture/week_1.jpg",
+      description: "Wrote unit and integration tests for our codebase. Set up CI/CD pipeline and learned about containerization with Docker."
+    },
+    {
+      id: 10,
+      title: "Testing and Deployment",
+      category: "10th Week",
+      image: "/picture/week_1.jpg",
+      description: "Wrote unit and integration tests for our codebase. Set up CI/CD pipeline and learned about containerization with Docker."
+    },
+    {
+      id: 11,
+      title: "Polishing the System Performance",
+      category: "11th Week",
+      image: "/picture/week_1.jpg",
+      description: "Wrote unit and integration tests for our codebase. Set up CI/CD pipeline and learned about containerization with Docker."
+    },
+    {
+      id: 12,
+      title: "Thoroughly test and debug the system that is deployed on vercel",
+      category: "12th Week",
+      image: "/picture/week_12/7.jpg",
+      description: "For our final week at Gubat RHU, we returned to assist in encoding patient data into the IClinicSys system. With our system tasks complete, we focused again on helping streamline patient record management, ensuring data accuracy before wrapping up our OJT."
     }
   ];
+
+  // Function to navigate to blog detail page
+  const handleBlogClick = (weekId) => {
+    router.push(`/blog/${weekId}`);
+  };
 
   return (
     <Box id='blog'
@@ -67,7 +115,7 @@ export default function WeeklyBlogSection() {
           }}
         >
           <Typography
-            variant="h2" 
+            component="h2"
             fontWeight="bold" 
             gutterBottom
             sx={{ 
@@ -116,97 +164,96 @@ export default function WeeklyBlogSection() {
         >
           {weeks.map((week) => (
             <Card
-            key={week.id}
-            sx={{
-              height: '100%',
-              display: 'flex',
-              flexDirection: 'column',
-              borderRadius: '16px',
-              overflow: 'hidden',
-              transition: 'all 0.3s ease',
-              bgcolor: isDark ? 'background.paper' : 'white',
-              color: isDark ? 'text.primary' : 'inherit',
-              '&:hover': {
-                transform: 'translateY(-8px)',
-                boxShadow: isDark 
-                  ? '0 12px 24px rgba(255, 255, 255, 0.1)' 
-                  : '0 12px 24px rgba(0, 0, 0, 0.1)',
-              },
-            }}
-          >
-            <CardMedia
-              component="img"
-              height="180"
-              image={week.image}
-              alt={week.title}
+              key={week.id}
               sx={{
-                objectFit: 'cover',
-              }}
-            />
-            <CardContent
-              sx={{
-                flex: 1,
+                height: '100%',
                 display: 'flex',
                 flexDirection: 'column',
-                gap: 1.5,
-                p: 2.5,
+                borderRadius: '16px',
+                overflow: 'hidden',
+                transition: 'all 0.3s ease',
+                bgcolor: isDark ? 'background.paper' : 'white',
+                color: isDark ? 'text.primary' : 'inherit',
+                '&:hover': {
+                  transform: 'translateY(-8px)',
+                  boxShadow: isDark 
+                    ? '0 12px 24px rgba(255, 255, 255, 0.1)' 
+                    : '0 12px 24px rgba(0, 0, 0, 0.1)',
+                },
               }}
             >
-              <Chip
-                label={week.category}
+              <CardMedia
+                component="img"
+                height="180"
+                image={week.image}
+                alt={week.title}
                 sx={{
-                  alignSelf: 'flex-start',
-                  backgroundColor: isDark ? 'rgba(226, 232, 240, 0.15)' : '#e2e8f0',
-                  color: isDark ? 'text.primary' : '#1e293b',
-                  fontWeight: 600,
-                  mb: 1
+                  objectFit: 'cover',
                 }}
               />
-              
-              <Typography
-                variant="h5"
+              <CardContent
                 sx={{
-                  fontWeight: 600,
-                  color: isDark ? 'text.primary' : '#1e293b',
-                  mb: 1,
-                  fontSize: { xs: '1.1rem', sm: '1.3rem' }
+                  flex: 1,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: 1.5,
+                  p: 2.5,
                 }}
               >
-                {week.title}
-              </Typography>
-          
-              <Typography
-                sx={{
-                  color: isDark ? 'text.secondary' : '#64748b',
-                  fontSize: '0.95rem',
-                  mb: 1.5,
-                  flex: 1
-                }}
-              >
-                {week.description}
-              </Typography>
-          
+                <Chip
+                  label={week.category}
+                  sx={{
+                    alignSelf: 'flex-start',
+                    backgroundColor: isDark ? 'rgba(226, 232, 240, 0.15)' : '#e2e8f0',
+                    color: isDark ? 'text.primary' : '#1e293b',
+                    fontWeight: 600,
+                    mb: 1
+                  }}
+                />
+                
+                <Typography
+                  variant="h5"
+                  sx={{
+                    fontWeight: 600,
+                    color: isDark ? 'text.primary' : '#1e293b',
+                    mb: 1,
+                    fontSize: { xs: '1.1rem', sm: '1.3rem' }
+                  }}
+                >
+                  {week.title}
+                </Typography>
             
-              
-              <Button 
-                variant="contained"
-                sx={{
-                  borderRadius:'30px',
-                  height:'50px',
-                  mt: 2,
-                  bgcolor: isDark ? 'primary.main' : 'black',
-                  '&:hover': {
-                    bgcolor: isDark ? 'primary.dark' : '#1e40af',
-                  },
-                  textTransform: 'none',
-                  fontWeight: 600,
-                  py: 1
-                }}
-              >
-                Dive in
-              </Button>
-            </CardContent>
-          </Card>
+                <Typography
+                  sx={{
+                    color: isDark ? 'text.secondary' : '#64748b',
+                    fontSize: '0.95rem',
+                    mb: 1.5,
+                    flex: 1
+                  }}
+                >
+                  {week.description}
+                </Typography>
+            
+                <Button 
+                  variant="contained"
+                  onClick={() => handleBlogClick(week.id)}
+                  sx={{
+                    borderRadius:'30px',
+                    height:'50px',
+                    mt: 2,
+                    bgcolor: isDark ? 'primary.main' : 'black',
+                    '&:hover': {
+                      bgcolor: isDark ? 'primary.dark' : '#1e40af',
+                    },
+                    textTransform: 'none',
+                    fontWeight: 600,
+                    py: 1
+                  }}
+                >
+                  Dive in
+                </Button>
+              </CardContent>
+            </Card>
           ))}
         </Box>
       </Container>
