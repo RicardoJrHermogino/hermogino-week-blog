@@ -1,75 +1,46 @@
 export const week10 = {
-    id: 10,
-    title: "Testing and Deployment",
-    category: "6th Week",
-    image: "/picture/week_6.jpg",
-    date: "February 14, 2025",
-    description: "Wrote unit and integration tests for our codebase. Set up CI/CD pipeline and learned about containerization with Docker.",
-    content: `
-      <h2>Quality Assurance and Deployment</h2>
-      <p>In my final week, I focused on ensuring code quality through testing and streamlining the deployment process. These skills are crucial for delivering reliable software and maintaining a sustainable development workflow.</p>
-      
-      <h3>Test-Driven Development</h3>
-      <p>I embraced test-driven development practices and wrote various types of tests:</p>
-      <ul>
-        <li>Unit tests for individual functions and components</li>
-        <li>Integration tests for API endpoints</li>
-        <li>End-to-end tests for critical user flows</li>
-        <li>Performance tests for database operations</li>
-        <li>Security tests for authentication flows</li>
-      </ul>
-      
-      <h3>Testing Frameworks and Tools</h3>
-      <p>I gained experience with several testing frameworks and tools:</p>
-      <ul>
-        <li>Jest for JavaScript unit testing</li>
-        <li>React Testing Library for component testing</li>
-        <li>Supertest for API testing</li>
-        <li>Cypress for end-to-end testing</li>
-        <li>JMeter for performance testing</li>
-      </ul>
-      
-      <h3>Containerization with Docker</h3>
-      <p>I learned how to containerize our application using Docker:</p>
-      <ul>
-        <li>Creating optimized Dockerfiles</li>
-        <li>Setting up multi-stage builds</li>
-        <li>Configuring Docker Compose for local development</li>
-        <li>Managing environment variables securely</li>
-        <li>Implementing volume mounts for persistent data</li>
-      </ul>
-      
-      <h3>CI/CD Pipeline Implementation</h3>
-      <p>I helped set up a continuous integration and deployment pipeline:</p>
-      <ul>
-        <li>Configuring GitHub Actions workflows</li>
-        <li>Implementing automated testing on pull requests</li>
-        <li>Setting up code quality checks with ESLint and Prettier</li>
-        <li>Creating deployment stages (development, staging, production)</li>
-        <li>Implementing rollback strategies</li>
-      </ul>
-      
-      <h3>Reflection on My Internship Journey</h3>
-      <p>As I conclude my six-week internship, I'm grateful for the comprehensive experience I've gained. From backend development to frontend frameworks, from security to performance optimization, and finally to testing and deployment, I've had the opportunity to work on all aspects of modern web development.</p>
-      
-      <p>I want to thank the entire team for their support, guidance, and patience throughout this journey. I've grown significantly as a developer and look forward to applying these skills in my future endeavors.</p>
-    `,
-    gallery: [
-      {
-        image: "/picture/week6_unit_testing.jpg",
-        caption: "Writing unit tests for backend components"
-      },
-      {
-        image: "/picture/week6_docker.jpg",
-        caption: "Working on Docker containerization"
-      },
-      {
-        image: "/picture/week6_ci_cd.jpg",
-        caption: "Setting up CI/CD pipeline with GitHub Actions"
-      },
-      {
-        image: "/picture/week6_final_presentation.jpg",
-        caption: "Giving my final presentation to the team"
-      }
-    ]
-  };
+  id: 10,
+  title: "Final System Development and RHU Tasks",
+  category: "10th Week",
+  image: "/picture/week_10.jpg",
+  date: "February 7, 2025",
+  description: "Focused on finalizing the backend and frontend parts of the RHU system while also assisting with daily tasks like patient data encoding.",
+  content: `
+    <h2>Wrapping Up System Development</h2>
+    <p>This week was all about pushing through the final stages of the RHU system development. I worked on polishing both the backend functionalities and frontend interfaces to ensure the system's key features were complete and user-friendly.</p>
+    
+    <h3>Backend and Frontend Progress</h3>
+    <p>Specifically, I focused on:</p>
+    <ul>
+      <li>Finalizing CRUD operations for key patient and medical records</li>
+      <li>Improving UI components to ensure smooth navigation and usability</li>
+      <li>Testing newly added features and fixing minor bugs encountered along the way</li>
+    </ul>
+    
+    <h3>Balancing Development with RHU Tasks</h3>
+    <p>While wrapping up the system, I also continued contributing to the RHU’s daily operations. Much of my time was spent:</p>
+    <ul>
+      <li>Encoding patient data into the ITR system</li>
+      <li>Assisting staff in organizing and updating medical records</li>
+      <li>Helping with data entry for new patient visits</li>
+    </ul>
+    <p>It was a balancing act—coding and debugging one moment, then assisting with records and encoding the next. But it gave me a better appreciation of the real-world application of the system we're building.</p>
+    
+    <h3>Looking Ahead</h3>
+    <p>With most of the development work completed, we’re now preparing to shift focus fully on testing and deployment next week. The goal is to ensure the system is stable and ready for actual use by the RHU staff.</p>
+  `,
+  gallery: [
+    {
+      image: "/picture/week10_coding.jpg",
+      caption: "Finalizing backend and frontend features"
+    },
+    {
+      image: "/picture/week10_encoding.jpg",
+      caption: "Assisting with daily encoding of patient data"
+    },
+    {
+      image: "/picture/week10_debugging.jpg",
+      caption: "Testing and fixing bugs during system development"
+    }
+  ]
+};
