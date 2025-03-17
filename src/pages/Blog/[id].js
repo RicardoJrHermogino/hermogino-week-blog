@@ -8,7 +8,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ImageIcon from '@mui/icons-material/Image';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'; // Added this import
-import { weeksData } from './weekData';
+import { weeksData } from '../../weekData';
 
 export default function BlogDetail() {
   const router = useRouter();

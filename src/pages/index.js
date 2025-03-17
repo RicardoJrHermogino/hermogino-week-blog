@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Typography, Button, Box, Container, useTheme } from "@mui/material";
 import Navbar from "./components/navbar";
 import About from "./about";
-import WeeklyBlogSection from "./blog/index"
+import WeeklyBlogSection from "./blog";
 import { useRef } from "react";
 
 export default function Home() {

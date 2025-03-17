@@ -1,4 +1,4 @@
-// data/weeksData.js
+// blog/weeksData.js
 export const weeksData = [
   {
     id: 1,
