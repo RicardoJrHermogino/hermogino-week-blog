@@ -8,7 +8,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ImageIcon from '@mui/icons-material/Image';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'; // Added this import
-import { weeksData } from '../../weekData';
+import { weeksData } from '../../data/weekData';
 
 export default function BlogDetail() {
   const router = useRouter();
@@ -395,7 +395,7 @@ export default function BlogDetail() {
           {blogData.id > 1 && (
             <Button
               startIcon={<ArrowBackIcon />}
-              onClick={() => router.push(`/blog/${blogData.id - 1}`)}
+              onClick={() => router.push(`/weeklyBlog/${blogData.id - 1}`)}
               variant="outlined"
               sx={{ 
                 borderRadius: 2,
@@ -410,7 +410,7 @@ export default function BlogDetail() {
           {blogData.id < weeksData.length && (
             <Button
               endIcon={<ArrowForwardIcon />}
-              onClick={() => router.push(`/blog/${blogData.id + 1}`)}
+              onClick={() => router.push(`/weeklyBlog/${blogData.id + 1}`)}
               variant="contained"
               sx={{ 
                 borderRadius: 2,

@@ -10,7 +10,7 @@ export default function WeeklyBlogSection() {
   const weeks = [
     {
       id: 1,
-      title: "Firs Week Training with IClinicSys Encoding",
+      title: "Firt Week Training with IClinicSys Encoding",
       category: "1st Week",
       image: "/picture/week_1/week_1.jpg",
       description: "Started my On-the-Job Training at Gubat Rural Health Unit and Birthing Home under the Local Government Unit of Gubat. Welcomed by Sir Jay-Ar Jarabejo, who trained me in encoding patient records into IClinicSys. Learned to process paper records, interpret handwritten data, and keep up with the fast-paced flow of free healthcare services provided daily to the community."
@@ -80,17 +80,17 @@ export default function WeeklyBlogSection() {
     },
     {
       id: 11,
-      title: "Polishing the System Performance",
+      title: "Finalizing and Testing the RHU System",
       category: "11th Week",
       image: "/picture/week_1.jpg",
-      description: "Wrote unit and integration tests for our codebase. Set up CI/CD pipeline and learned about containerization with Docker."
-    },
+      description: "Early this week, we wrapped up the system development. The rest of the week was dedicated to testing and debugging, ensuring everything functioned smoothly. No issues were encountered, so by week's end, we declared the RHU system development officially complete."
+    },    
     {
       id: 12,
-      title: "Thoroughly test and debug the system that is deployed on vercel",
+      title: "Assisted Patient Data Encoding & Final System Turnover Discussion",
       category: "12th Week",
       image: "/picture/week_12/7.jpg",
-      description: "For our final week at Gubat RHU, we returned to assist in encoding patient data into the IClinicSys system. With our system tasks complete, we focused again on helping streamline patient record management, ensuring data accuracy before wrapping up our OJT."
+      description: "In our final week at Gubat RHU, after completing our system development, we returned to assist in encoding patient data into the IClinicSys system. At the end of the week, we were awarded a certificate and had a photo with Dr. Ronald E. Ferreras, Municipal Health Officer of Gubat, and Sir Jay-Ar Jarabejo, IT staff and our training supervisor."
     }
   ];
 
@@ -162,7 +162,9 @@ export default function WeeklyBlogSection() {
             mt: 4
           }}
         >
-          {weeks.map((week) => (
+          {[...weeks]
+          .sort((a, b) => b.id - a.id)
+          .map((week) => (
             <Card
               key={week.id}
               sx={{
