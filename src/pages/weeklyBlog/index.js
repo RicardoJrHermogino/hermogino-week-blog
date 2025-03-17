@@ -96,7 +96,7 @@ export default function WeeklyBlogSection() {
 
   // Function to navigate to blog detail page
   const handleBlogClick = (weekId) => {
-    router.push(`/blog/${weekId}`);
+    router.push(`/weeklyBlog/${weekId}`);
   };
 
   return (
