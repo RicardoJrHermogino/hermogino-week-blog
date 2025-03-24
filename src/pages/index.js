@@ -155,21 +155,6 @@ export default function Home() {
               Address: Cogon, Gubat, Sorsogon 
             </Typography>
           </Box>
-
-          <Box sx={{ textAlign: "center", mt: 4 }}>
-            <Button
-              variant="contained"
-              color="primary"
-              sx={{
-                bgcolor: isDark ? 'primary.main' : 'black',
-                "&:hover": {
-                  bgcolor: isDark ? 'primary.dark' : '#333'
-                }
-              }}
-            >
-              Send Message
-            </Button>
-          </Box>
         </Container>
       </Box>
 

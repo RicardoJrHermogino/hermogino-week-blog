@@ -191,7 +191,11 @@ export default function About({ aboutRef }) {
                   color: alpha(theme.palette.text.primary, 0.9)
                 }}
               >
-                The Lewis College (TLC) is committed to providing quality education and hands-on training to its Bachelor of Science in Information Technology (BSIT) students. As part of this mission, TLC has implemented an On-the-Job Training (OJT) program designed to expose students to real-world work environments and industry practices.
+                The Lewis College (TLC) recognizes that learning doesn't stop inside the classroom. To better prepare BSIT students for the demands of the IT industry, TLC has implemented an On-the-Job Training (OJT) program focused on exposing students to real-world work environments and actual industry practices. Through this program, students are given the chance to apply the technical skills they've developed—whether in programming, troubleshooting, system development, or project management—directly in professional settings.
+
+                The OJT program allows students to work alongside experienced professionals, take part in day-to-day operations, and understand how IT departments function in real organizations. It’s not only about honing technical skills but also about adjusting to workplace expectations, improving communication, collaborating with a team, and learning how to handle responsibilities under real deadlines.
+
+                To document and reflect on this experience, this blog showcases the interns’ journey throughout their OJT. It gives a detailed view of how they navigated their tasks, handled challenges, balanced technical work with other responsibilities, and ultimately grew both personally and professionally. Through these entries, readers can see how theoretical knowledge is applied in practice, how the interns adapted to real-world scenarios, and how their experience helped prepare them for future careers in IT.
               </Typography>
               
               <Box sx={{ display: 'flex', alignItems: 'center', mb: 4 }}>
@@ -219,7 +223,7 @@ export default function About({ aboutRef }) {
                   color: alpha(theme.palette.text.primary, 0.9)
                 }}
               >
-                The OJT HOST, Gubat Rural Health Unit and Birthing Home, plays a crucial role in public healthcare services, offering medical assistance to the local community. In partnership with TLC, the RHU has provided a conducive environment for student trainees to apply their IT skills in a professional setting.
+                The OJT Venue, Gubat Rural Health Unit and Birthing Home, plays a crucial role in public healthcare services, offering medical assistance to the local community. In partnership with TLC, the RHU has provided a conducive environment for student trainees to apply their IT skills in a professional setting.
               </Typography>
             </Paper>
           </Grid>
@@ -454,7 +458,7 @@ export default function About({ aboutRef }) {
                     
                     <Grid container spacing={2}>
                       <Grid item xs={6}>
-                        <InfoItem label="Age" value="21" highlight />
+                        <InfoItem label="Age" value="22" highlight />
                       </Grid>
                       <Grid item xs={6}>
                         <InfoItem label="Sex" value="Male" highlight />

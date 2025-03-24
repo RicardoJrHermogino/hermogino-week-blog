@@ -10,7 +10,9 @@ export const week12 = {
     <p>In our final week at Gubat RHU, we shifted our focus back to assisting the staff in encoding patient data into the IClinicSys system, ensuring records were accurate and updated before we concluded our OJT.</p>
     
     <h3>System Turnover and Maintenance Discussion</h3>
-    <p>We held a meeting with Dr. Ronald E. Ferreras and Sir Jay-Ar Jarabejo to discuss how the system we developed could be maintained moving forward. Topics included managing user access, updating records, and the possibility of hosting the system under a dedicated domain for better accessibility and scalability.</p>
+    <p>We held a meeting with Dr. Ronald E. Ferreras and Sir Jay-Ar Jarabejo to discuss how the system we developed could be maintained moving forward. Topics included managing user access, updating records, and the possibility of hosting the system under a dedicated domain for better accessibility and scalability.
+
+    <p>During the discussion, we also touched on the budgeting side of things—specifically how to cover the costs of securing a domain and hosting. Dr. Ferreras and Sir Jay-Ar mentioned that they’re open to allocating a budget for the system’s long-term sustainability. They even expressed their willingness to provide us with a payment as compensation for the development, which honestly was very motivating and appreciated. We’re still ironing out the specifics, but it’s reassuring to know they’re committed to supporting the system moving forward.
     
     <h3>Certificate Awarding</h3>
     <p>At the end of the week, we were honored with certificates of completion and had a commemorative photo with Dr. Ronald E. Ferreras, the Municipal Health Officer of Gubat, and Sir Jay-Ar Jarabejo, the IT staff and our training supervisor.</p>
