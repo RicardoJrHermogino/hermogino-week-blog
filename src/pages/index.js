@@ -34,7 +34,7 @@ export default function Home() {
       <Navbar scrollToSection={scrollToSection} />
       <Head>
         <title>Hermogino Weekly Blog</title>
-        <meta name="description" content="A minimalist and modern homepage" />
+        <meta name="description" content="My weekly blog for my internship journey" />
       </Head>
 
       {/* Hero Section */}
@@ -95,7 +95,7 @@ export default function Home() {
             Welcome to my Internship Weekly Blog
           </Typography>
           <Typography variant="h5" sx={{ color: "rgba(255, 255, 255, 0.8)", mb: 4 }}>
-            Sharing my internship journey—projects, challenges, and lessons learned every week.
+            My Internship Journey at LGU-Gubat, Gubat Rural Health Unit and Birthing Home
           </Typography>
 
           <Button
