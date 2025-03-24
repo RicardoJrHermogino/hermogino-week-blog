@@ -10,81 +10,81 @@ export default function WeeklyBlogSection() {
   const weeks = [
     {
       id: 1,
-      title: "Firt Week Training with IClinicSys Encoding",
+      title: "First Week Training with IClinicSys Encoding",
       category: "1st Week",
       image: "/picture/week_1/week_1.jpg",
       description: "Started my On-the-Job Training at Gubat Rural Health Unit and Birthing Home under the Local Government Unit of Gubat. Welcomed by Sir Jay-Ar Jarabejo, who trained me in encoding patient records into IClinicSys. Learned to process paper records, interpret handwritten data, and keep up with the fast-paced flow of free healthcare services provided daily to the community."
     },
     {
       id: 2,
-      title: "Backend Development Basics",
+      title: "Adjusting to RHU Workflow & Improving Efficiency",
       category: "2nd Week",
-      image: "/picture/week_2/week_2.jpg",
-      description: "Began working on backend development. Learned RESTful API design principles and created my first endpoints with Express.js."
-    },
+      image: "/picture/week_2/1.jpg",
+      description: "On my second week, I quickly adapted to RHU's fast-paced workflow, steadily improving my efficiency in handling tasks like iClinicSys encoding and PhilHealth eligibility checks. I also realized how positive and nice the environment was, with the doctors, nurses, and staff being genuinely kind and supportive."
+    },    
     {
       id: 3,
-      title: "Frontend Framework Introduction",
+      title: "Record Organization & Encoding Tasks",
       category: "3rd Week",
-      image: "/picture/week_1.jpg",
-      description: "Started learning React and Material UI. Built my first component and integrated it with the API endpoints from last week."
-    },
+      image: "/picture/week_3/3.jpg",
+      description: "With fewer tasks this week, Sir Jay Ar assigned me and my classmate Kenneth Fazon to organize and file paper records based on their codes and numbers. After finishing, we returned to our usual encoding duties."
+    },    
     {
       id: 4,
-      title: "Authentication System",
+      title: "Building Confidence in RHU Workflow",
       category: "4th Week",
-      image: "/picture/week_1.jpg",
-      description: "Implemented authentication flows using JWT tokens. Learned about secure user management and authorization strategies."
+      image: "/picture/week_4/1.jpg",
+      description: "This week, we stayed consistent with our regular RHU tasks—encoding patient data, organizing records, and supporting daily operations. I started becoming more confident and quicker, especially in understanding doctors’ handwriting on prescriptions and diagnoses, which helped me complete tasks faster without second-guessing."
     },
     {
       id: 5,
-      title: "Database Optimization",
+      title: "RHU Workflow Mastery",
       category: "5th Week",
       image: "/picture/week_1.jpg",
-      description: "Focused on database performance. Learned about indexing, query optimization, and implementing efficient data structures."
+      description: "By this week, I fully mastered the RHU’s workflow—from patient encoding to handling records smoothly. Tasks felt automatic; I rarely needed to ask supervisors for clarification, even when unusual documents or issues came up. Everything ran efficiently, making my contributions solid and independent."
     },
     {
       id: 6,
-      title: "Testing and Deployment",
+      title: "Guiding New Intern & Continuing RHU Duties",
       category: "6th Week",
-      image: "/picture/week_1.jpg",
-      description: "Wrote unit and integration tests for our codebase. Set up CI/CD pipeline and learned about containerization with Docker."
+      image: "/picture/week_6/1.jpg",
+      description: "This week, our classmate Chryst Ian joined as a new intern. While continuing our regular encoding and record management tasks, we also guided Ian in adapting to RHU’s workflow and systems, ensuring a smooth transition for him."
     },
     {
       id: 7,
-      title: "Testing and Deployment",
+      title: "PhilHealth Konsulta Event Participation",
       category: "7th Week",
-      image: "/picture/week_1.jpg",
-      description: "Wrote unit and integration tests for our codebase. Set up CI/CD pipeline and learned about containerization with Docker."
-    },
+      image: "/picture/week_7/1.jpg",
+      description: "Assigned as part of the official workforce for the PhilHealth Konsulta event. Managed registration and data encoding tasks for community members receiving free health check-ups."
+    },    
     {
       id: 8,
-      title: "Testing and Deployment",
+      title: "PhilHealth Eligibility and Patient Record Encoding",
       category: "8th Week",
-      image: "/picture/week_1.jpg",
-      description: "Wrote unit and integration tests for our codebase. Set up CI/CD pipeline and learned about containerization with Docker."
-    },
+      image: "/picture/week_8/1.jpg",
+      description: "Continued encoding patient records in iClinicSys and handled PhilHealth eligibility claims by verifying Individual Treatment Records (ITR) for proper registration under Gubat RHU."
+    },    
     {
       id: 9,
-      title: "Testing and Deployment",
+      title: "Regular RHU Duties & Website Assignment",
       category: "9th Week",
-      image: "/picture/week_1.jpg",
-      description: "Wrote unit and integration tests for our codebase. Set up CI/CD pipeline and learned about containerization with Docker."
-    },
+      image: "/picture/week_9/3.jfif",
+      description: "While assisting with encoding and records, Dr. Ronald tasked us to create an RHU website for events, admin access, and information display, with development set to begin next week."
+    },        
     {
       id: 10,
-      title: "Testing and Deployment",
+      title: "Start of RHU System Frontend Development & Tech Stack Finalization",
       category: "10th Week",
-      image: "/picture/week_1.jpg",
-      description: "Wrote unit and integration tests for our codebase. Set up CI/CD pipeline and learned about containerization with Docker."
-    },
+      image: "/picture/week_10/2.png",
+      description: "We formally began RHU system development this week. The tech stack was finalized: Next.js for frontend, Material UI for design, Next.js API Routes for backend operations, and MongoDB as the database. We started building key frontend components and laid the groundwork for backend integration."
+    },          
     {
       id: 11,
-      title: "Finalizing and Testing the RHU System",
+      title: "Backend Completion and System Finalization Amid RHU Duties",
       category: "11th Week",
-      image: "/picture/week_1.jpg",
-      description: "Early this week, we wrapped up the system development. The rest of the week was dedicated to testing and debugging, ensuring everything functioned smoothly. No issues were encountered, so by week's end, we declared the RHU system development officially complete."
-    },    
+      image: "/picture/week_11/1.jpg",
+      description: "We dedicated this week to completing the backend development of the RHU system, utilizing Next.js API Routes and MongoDB. After meeting our primary development targets earlier than planned, we proceeded with final testing and debugging. Alongside system work, we also continued handling regular RHU tasks. By the end of the week, the RHU system was finalized and ready for use."
+    },       
     {
       id: 12,
       title: "Assisted Patient Data Encoding & Final System Turnover Discussion",
@@ -167,6 +167,7 @@ export default function WeeklyBlogSection() {
           .map((week) => (
             <Card
               key={week.id}
+              onClick={() => handleBlogClick(week.id)}
               sx={{
                 height: '100%',
                 display: 'flex',
@@ -176,6 +177,7 @@ export default function WeeklyBlogSection() {
                 transition: 'all 0.3s ease',
                 bgcolor: isDark ? 'background.paper' : 'white',
                 color: isDark ? 'text.primary' : 'inherit',
+                cursor: 'pointer', // Add this to show it's clickable
                 '&:hover': {
                   transform: 'translateY(-8px)',
                   boxShadow: isDark 

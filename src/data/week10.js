@@ -1,46 +1,81 @@
 export const week10 = {
   id: 10,
-  title: "Final System Development and RHU Tasks",
+  title: "Start of RHU System Frontend Development & Tech Stack Finalization",
   category: "10th Week",
-  image: "/picture/week_10.jpg",
+  image: "/picture/week_10/1.jpg",
   date: "February 7, 2025",
-  description: "Focused on finalizing the backend and frontend parts of the RHU system while also assisting with daily tasks like patient data encoding.",
+  description: "We formally began RHU system development this week. The tech stack was finalized: Next.js for frontend, Material UI for design, Next.js API Routes for backend operations, and MongoDB as the database. We started building key frontend components and laid the groundwork for backend integration.",
   content: `
-    <h2>Wrapping Up System Development</h2>
-    <p>This week was all about pushing through the final stages of the RHU system development. I worked on polishing both the backend functionalities and frontend interfaces to ensure the system's key features were complete and user-friendly.</p>
-    
-    <h3>Backend and Frontend Progress</h3>
-    <p>Specifically, I focused on:</p>
+    <h2>Starting the RHU System Development Journey</h2>
+    <p>This week marked a crucial turning point—we officially kicked off the RHU system development. After careful consideration, we finalized the tech stack to ensure scalability and smooth performance:</p>
     <ul>
-      <li>Finalizing CRUD operations for key patient and medical records</li>
-      <li>Improving UI components to ensure smooth navigation and usability</li>
-      <li>Testing newly added features and fixing minor bugs encountered along the way</li>
+      <li><strong>Next.js</strong> for frontend development, providing server-side rendering and seamless routing</li>
+      <li><strong>Material UI</strong> for consistent and modern UI components</li>
+      <li><strong>Next.js API Routes</strong> to handle backend operations efficiently</li>
+      <li><strong>MongoDB</strong> as the database for flexible data management</li>
     </ul>
-    
-    <h3>Balancing Development with RHU Tasks</h3>
-    <p>While wrapping up the system, I also continued contributing to the RHU’s daily operations. Much of my time was spent:</p>
+
+    <h3>Frontend Development Kickoff</h3>
+    <p>With the stack locked in, I focused on starting the frontend structure. Key accomplishments included:</p>
+    <ul>
+      <li>Setting up the basic project architecture using Next.js</li>
+      <li>Implementing initial layout and navigation components</li>
+      <li>Designing reusable UI components using Material UI</li>
+    </ul>
+
+    <h3>Backend Foundation</h3>
+    <p>While frontend work took center stage, I also laid down the groundwork for backend integration using Next.js API Routes. This involved setting up initial API endpoints and preparing database connection logic for MongoDB.</p>
+
+    <h3>Balancing Dev with RHU Tasks</h3>
+    <p>In between coding sessions, I continued assisting with RHU’s daily operations, particularly:</p>
     <ul>
       <li>Encoding patient data into the ITR system</li>
-      <li>Assisting staff in organizing and updating medical records</li>
-      <li>Helping with data entry for new patient visits</li>
+      <li>Organizing and updating medical records alongside staff</li>
+      <li>Supporting data entry for new patient visits</li>
     </ul>
-    <p>It was a balancing act—coding and debugging one moment, then assisting with records and encoding the next. But it gave me a better appreciation of the real-world application of the system we're building.</p>
-    
+    <p>It was a week of shifting gears—switching from coding in the morning to real-world data management by afternoon. That hands-on exposure kept the development grounded in actual RHU workflows.</p>
+
     <h3>Looking Ahead</h3>
-    <p>With most of the development work completed, we’re now preparing to shift focus fully on testing and deployment next week. The goal is to ensure the system is stable and ready for actual use by the RHU staff.</p>
+    <p>Next week’s focus will be on expanding frontend features and tightening backend connectivity, making sure both sides are ready to work in sync as development progresses.</p>
   `,
   gallery: [
     {
-      image: "/picture/week10_coding.jpg",
-      caption: "Finalizing backend and frontend features"
+      type: "video",
+      source: "/picture/week_10/4.mp4",
+      caption: "Balancing RHU tasks alongside system development"
     },
     {
-      image: "/picture/week10_encoding.jpg",
-      caption: "Assisting with daily encoding of patient data"
+      type: "image",
+      source: "/picture/week_10/7.jpg",
+      caption: "Developing frontend components using Material UI"
     },
     {
-      image: "/picture/week10_debugging.jpg",
-      caption: "Testing and fixing bugs during system development"
-    }
+      type: "image",
+      source: "/picture/week_10/8.jpg",
+      caption: "Balancing RHU tasks alongside system development"
+    },
+    {
+      type: "image",
+      source: "/picture/week_10/9.jpg",
+      caption: "Balancing RHU tasks alongside system development"
+    },
+    {
+      type: "image",
+      source: "/picture/week_10/10.jpg",
+      caption: "Balancing RHU tasks alongside system development"
+    },
+    {
+      type: "image",
+      source: "/picture/week_10/5.jpg",
+      caption: "Balancing RHU tasks alongside system development"
+    },
+    {
+      type: "image",
+      source: "/picture/week_10/6.jpg",
+      caption: "Balancing RHU tasks alongside system development"
+    },
+    
+    
   ]
+  
 };

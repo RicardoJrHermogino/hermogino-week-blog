@@ -19,23 +19,28 @@ export const week12 = {
   `,
   gallery: [
     {
-      image: "/picture/week_12/1.jpg",
+      type: "image",
+      source: "/picture/week_12/1.jpg",
       caption: "Assisting with patient data encoding"
     },
     {
-      image: "/picture/week_12/2.jpg",
+      type: "image",
+      source: "/picture/week_12/2.jpg",
       caption: "Discussing system maintenance and hosting options"
     },
     {
-      image: "/picture/week_12/3.jpg",
+      type: "image",
+      source: "/picture/week_12/3.jpg",
       caption: "Final system review with RHU staff"
     },
     {
-      image: "/picture/week_12/5.jpg",
+      type: "image",
+      source: "/picture/week_12/5.jpg",
       caption: "Receiving certificate of completion"
     },
     {
-      image: "/picture/week_12/7.jpg",
+      type: "image",
+      source: "/picture/week_12/7.jpg",
       caption: "Commemorative photo with Dr. Ronald E. Ferreras and Sir Jay-Ar Jarabejo"
     },
   ]

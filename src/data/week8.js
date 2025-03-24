@@ -1,75 +1,29 @@
 export const week8 = {
-    id: 8,
-    title: "Testing and Deployment",
-    category: "6th Week",
-    image: "/picture/week_6.jpg",
-    date: "February 14, 2025",
-    description: "Wrote unit and integration tests for our codebase. Set up CI/CD pipeline and learned about containerization with Docker.",
-    content: `
-      <h2>Quality Assurance and Deployment</h2>
-      <p>In my final week, I focused on ensuring code quality through testing and streamlining the deployment process. These skills are crucial for delivering reliable software and maintaining a sustainable development workflow.</p>
-      
-      <h3>Test-Driven Development</h3>
-      <p>I embraced test-driven development practices and wrote various types of tests:</p>
-      <ul>
-        <li>Unit tests for individual functions and components</li>
-        <li>Integration tests for API endpoints</li>
-        <li>End-to-end tests for critical user flows</li>
-        <li>Performance tests for database operations</li>
-        <li>Security tests for authentication flows</li>
-      </ul>
-      
-      <h3>Testing Frameworks and Tools</h3>
-      <p>I gained experience with several testing frameworks and tools:</p>
-      <ul>
-        <li>Jest for JavaScript unit testing</li>
-        <li>React Testing Library for component testing</li>
-        <li>Supertest for API testing</li>
-        <li>Cypress for end-to-end testing</li>
-        <li>JMeter for performance testing</li>
-      </ul>
-      
-      <h3>Containerization with Docker</h3>
-      <p>I learned how to containerize our application using Docker:</p>
-      <ul>
-        <li>Creating optimized Dockerfiles</li>
-        <li>Setting up multi-stage builds</li>
-        <li>Configuring Docker Compose for local development</li>
-        <li>Managing environment variables securely</li>
-        <li>Implementing volume mounts for persistent data</li>
-      </ul>
-      
-      <h3>CI/CD Pipeline Implementation</h3>
-      <p>I helped set up a continuous integration and deployment pipeline:</p>
-      <ul>
-        <li>Configuring GitHub Actions workflows</li>
-        <li>Implementing automated testing on pull requests</li>
-        <li>Setting up code quality checks with ESLint and Prettier</li>
-        <li>Creating deployment stages (development, staging, production)</li>
-        <li>Implementing rollback strategies</li>
-      </ul>
-      
-      <h3>Reflection on My Internship Journey</h3>
-      <p>As I conclude my six-week internship, I'm grateful for the comprehensive experience I've gained. From backend development to frontend frameworks, from security to performance optimization, and finally to testing and deployment, I've had the opportunity to work on all aspects of modern web development.</p>
-      
-      <p>I want to thank the entire team for their support, guidance, and patience throughout this journey. I've grown significantly as a developer and look forward to applying these skills in my future endeavors.</p>
-    `,
-    gallery: [
-      {
-        image: "/picture/week6_unit_testing.jpg",
-        caption: "Writing unit tests for backend components"
-      },
-      {
-        image: "/picture/week6_docker.jpg",
-        caption: "Working on Docker containerization"
-      },
-      {
-        image: "/picture/week6_ci_cd.jpg",
-        caption: "Setting up CI/CD pipeline with GitHub Actions"
-      },
-      {
-        image: "/picture/week6_final_presentation.jpg",
-        caption: "Giving my final presentation to the team"
-      }
-    ]
-  };
+  id: 8,
+  title: "PhilHealth Eligibility & Patient Record Encoding",
+  category: "8th Week",
+  image: "/picture/week_8/1.jpg",
+  date: "February 28, 2025",
+  description: "Continued encoding patient records in iClinicSys and handled PhilHealth eligibility claims by verifying Individual Treatment Records (ITR) for proper registration under Gubat RHU.",
+  content: `
+    <h2>Finalizing Patient Records & Handling PhilHealth Claims</h2>
+    <p>As the internship neared its close, I focused on refining my efficiency in encoding patient records through iClinicSys. My tasks this week involved not just data entry, but also ensuring that all information aligned with RHU’s standards and protocols.</p>
+    
+    <h3>PhilHealth Eligibility Verification</h3>
+    <p>A major responsibility this week was processing PhilHealth eligibility claims. I carefully reviewed Individual Treatment Records (ITRs) and checked each patient’s registration status under Gubat RHU. Verifying these records was crucial in making sure patients' PhilHealth claims were valid and properly documented.</p>
+
+    <h3>Mastery of RHU Systems</h3>
+    <p>With several weeks of experience behind me, navigating iClinicSys and PhilHealth systems felt second nature. I handled record encoding tasks confidently and efficiently, ensuring accuracy and consistency throughout the process.</p>
+
+    <h3>Reflection</h3>
+    <p>This final week solidified all the skills I’ve built throughout the internship—attention to detail, system navigation, and responsibility over sensitive patient data. Looking back, I feel accomplished seeing how much I’ve grown in handling real-world administrative and healthcare workflows.</p>
+  `,
+  gallery: [
+    {
+      type: "image",
+      source: "/picture/week_8/1.jpg",
+      caption: "Verifying Individual Treatment Records for PhilHealth eligibility"
+    },
+    
+  ]
+};

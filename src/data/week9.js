@@ -1,75 +1,41 @@
 export const week9 = {
-    id: 9,
-    title: "Testing and Deployment",
-    category: "6th Week",
-    image: "/picture/week_6.jpg",
-    date: "February 14, 2025",
-    description: "Wrote unit and integration tests for our codebase. Set up CI/CD pipeline and learned about containerization with Docker.",
-    content: `
-      <h2>Quality Assurance and Deployment</h2>
-      <p>In my final week, I focused on ensuring code quality through testing and streamlining the deployment process. These skills are crucial for delivering reliable software and maintaining a sustainable development workflow.</p>
-      
-      <h3>Test-Driven Development</h3>
-      <p>I embraced test-driven development practices and wrote various types of tests:</p>
-      <ul>
-        <li>Unit tests for individual functions and components</li>
-        <li>Integration tests for API endpoints</li>
-        <li>End-to-end tests for critical user flows</li>
-        <li>Performance tests for database operations</li>
-        <li>Security tests for authentication flows</li>
-      </ul>
-      
-      <h3>Testing Frameworks and Tools</h3>
-      <p>I gained experience with several testing frameworks and tools:</p>
-      <ul>
-        <li>Jest for JavaScript unit testing</li>
-        <li>React Testing Library for component testing</li>
-        <li>Supertest for API testing</li>
-        <li>Cypress for end-to-end testing</li>
-        <li>JMeter for performance testing</li>
-      </ul>
-      
-      <h3>Containerization with Docker</h3>
-      <p>I learned how to containerize our application using Docker:</p>
-      <ul>
-        <li>Creating optimized Dockerfiles</li>
-        <li>Setting up multi-stage builds</li>
-        <li>Configuring Docker Compose for local development</li>
-        <li>Managing environment variables securely</li>
-        <li>Implementing volume mounts for persistent data</li>
-      </ul>
-      
-      <h3>CI/CD Pipeline Implementation</h3>
-      <p>I helped set up a continuous integration and deployment pipeline:</p>
-      <ul>
-        <li>Configuring GitHub Actions workflows</li>
-        <li>Implementing automated testing on pull requests</li>
-        <li>Setting up code quality checks with ESLint and Prettier</li>
-        <li>Creating deployment stages (development, staging, production)</li>
-        <li>Implementing rollback strategies</li>
-      </ul>
-      
-      <h3>Reflection on My Internship Journey</h3>
-      <p>As I conclude my six-week internship, I'm grateful for the comprehensive experience I've gained. From backend development to frontend frameworks, from security to performance optimization, and finally to testing and deployment, I've had the opportunity to work on all aspects of modern web development.</p>
-      
-      <p>I want to thank the entire team for their support, guidance, and patience throughout this journey. I've grown significantly as a developer and look forward to applying these skills in my future endeavors.</p>
-    `,
-    gallery: [
-      {
-        image: "/picture/week6_unit_testing.jpg",
-        caption: "Writing unit tests for backend components"
-      },
-      {
-        image: "/picture/week6_docker.jpg",
-        caption: "Working on Docker containerization"
-      },
-      {
-        image: "/picture/week6_ci_cd.jpg",
-        caption: "Setting up CI/CD pipeline with GitHub Actions"
-      },
-      {
-        image: "/picture/week6_final_presentation.jpg",
-        caption: "Giving my final presentation to the team"
-      }
-    ]
-  };
+  id: 9,
+  title: "Regular RHU Duties & Website Assignment",
+  category: "9th Week",
+  image: "/picture/week_9/3.jfif",
+  date: "March 7, 2025",
+  description: "While assisting with encoding and records, Dr. Ronald tasked us to create an RHU website for events, admin access, and information display, with development set to begin next week.",
+  content: `
+    <h2>Ongoing RHU Support & New Web Development Assignment</h2>
+    <p>This week, I continued to assist with the regular duties at Gubat RHU—primarily focusing on patient data encoding, record management, and ensuring that all files remained up-to-date within the iClinicSys platform.</p>
+    
+    <h3>RHU Website Project Kickoff</h3>
+    <p>In addition to the routine administrative work, Dr. Ronald approached our team with an exciting new task: to design and develop an official RHU website. The goal is to create a user-friendly platform that will showcase the RHU’s services, upcoming events, health announcements, and provide admin access for easier content management.</p>
+    
+    <p>We began gathering the necessary requirements, brainstorming features, and drafting an initial plan. Full development is scheduled to start next week.</p>
+
+    <h3>Key Features Discussed:</h3>
+    <ul>
+      <li>Events and announcements section for RHU programs</li>
+      <li>Admin panel for easy content updates</li>
+      <li>Patient information and services overview</li>
+      <li>Responsive design for both desktop and mobile users</li>
+    </ul>
+
+    <h3>Reflection</h3>
+    <p>This week balanced routine tasks with the anticipation of something new. While encoding has become second nature, the website assignment adds an exciting development challenge. I'm looking forward to applying my technical skills to benefit the RHU’s operations and visibility.</p>
+  `,
+  gallery: [
+    {
+      type: "image",
+      source: "/picture/week_9/3.jfif",
+      caption: "Continuing patient data encoding in iClinicSys"
+    },
+    {
+      type: "image",
+      source: "/picture/week_9/2.jpg",
+      caption: "Continuing patient data encoding in iClinicSys"
+    },
+  ]
+};
+  

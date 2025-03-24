@@ -38,35 +38,33 @@ export const week1 = {
       `,
     gallery: [
       {
-        image: "/picture/week_1/week_1.0.jpg",
+        type: "image",
+        source: "/picture/week_1/week_1.0.jpg",
         caption: "Training session with Kuya Jay Ar Jarabejo on IClinicSys encoding"
       },
       {
-        image: "/picture/week_1/week_1.jpg",
+        type: "image",
+        source: "/picture/week_1/week_1.jpg",
         caption: "Training session with Kuya Jay Ar Jarabejo on IClinicSys encoding"
       },
       {
-        image: "/picture/week_1/week_1.1.jpg",
+        type: "image",
+        source: "/picture/week_1/week_1.1.jpg",
         caption: "Sorting through patient records before encoding"
       },
       {
-        image: "/picture/week_1/sd.jpg",
+        type: "image",
+        source: "/picture/week_1/sd.jpg",
         caption: "Entering patient data into the IClinicSys system"
       },
       {
-        image: "/picture/week_1/set.jpg",
+        type: "image",
+        source: "/picture/week_1/f1.jfif",
         caption: "My workspace set up for digitizing patient information"
       },
       {
-        image: "/picture/week_1/sad.jpg",
-        caption: "Entering patient data into the IClinicSys system"
-      },
-      {
-        image: "/picture/week_1/f1.jfif",
-        caption: "My workspace set up for digitizing patient information"
-      },
-      {
-        image: "/picture/week_1/f3.jfif",
+        type: "image",
+        source: "/picture/week_1/f3.jfif",
         caption: "My workspace set up for digitizing patient information"
       }
     ]

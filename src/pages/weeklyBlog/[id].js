@@ -150,10 +150,8 @@ export default function BlogDetail() {
           </Typography>
           
           <Box sx={{ mt: 2, display: 'flex', alignItems: 'center' }}>
-            <Typography variant="body1" sx={{ opacity: 0.8 }}>
-              {blogData.date}
-            </Typography>
-            <Box sx={{ mx: 2 }}>•</Box>
+
+            <Box sx={{mx: 2, fontSize: 50 }}>•</Box>
             <Chip 
               label={blogData.category} 
               sx={{ 
@@ -163,6 +161,8 @@ export default function BlogDetail() {
                 fontWeight: 600,
               }}
             />
+            <Box sx={{mx: 2, fontSize: 50}}>•</Box>
+
           </Box>
         </Container>
       </Box>
@@ -236,7 +236,15 @@ export default function BlogDetail() {
             
             <Grid container spacing={3}>
               {blogData.gallery.map((item, index) => (
-                <Grid item xs={12} sm={6} key={index}>
+                <Grid 
+                item 
+                xs={12} 
+                sm={item.type === 'image' 
+                      ? (blogData.gallery.filter(g => g.type === 'image').length > 1 ? 6 : 12) 
+                      : 12} 
+                key={index}
+              >
+              
                   <Paper
                     elevation={2}
                     sx={{
@@ -245,25 +253,66 @@ export default function BlogDetail() {
                       transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
                     }}
                   >
-                    <Box
-                      sx={{
-                        height: { xs: 280, sm: 320, md: 360 },
-                        width: '100%',
-                        backgroundImage: `url(${item.image})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                      }}
-                    />
-
-                    <Box sx={{ p: 2 }}>
-                      <Typography variant="body2" sx={{ fontStyle: 'italic', color: isDark ? theme.palette.text.secondary : '#475569' }}>
-                        {item.caption}
-                      </Typography>
-                    </Box>
+                    {item.type === 'image' ? (
+                      // IMAGE
+                      <Box
+                        sx={{
+                          paddingTop: '75%',
+                          width: '100%',
+                          position: 'relative',
+                          overflow: 'hidden',
+                        }}
+                      >
+                        <Box
+                          sx={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            width: '100%',
+                            height: '100%',
+                            backgroundImage: `url(${item.source})`,
+                            backgroundSize: 'contain',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat',
+                            backgroundColor: isDark ? 'rgba(0,0,0,0.2)' : 'rgba(0,0,0,0.05)',
+                          }}
+                        />
+                      </Box>
+                    ) : (
+                      // VIDEO
+                      <Box
+                        sx={{
+                          position: 'relative',
+                          width: '100%',
+                          paddingTop: '56.25%',
+                          backgroundColor: isDark ? 'rgba(0,0,0,0.2)' : 'rgba(0,0,0,0.05)',
+                        }}
+                      >
+                        <video
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                          style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'contain',
+                          }}
+                        >
+                          <source src={item.source} type="video/mp4" />
+                          Your browser does not support the video tag.
+                        </video>
+                      </Box>
+                    )}
                   </Paper>
                 </Grid>
               ))}
             </Grid>
+
+
           </Box>
         ) : (
           // Fallback content when gallery is not available

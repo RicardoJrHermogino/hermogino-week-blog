@@ -1,59 +1,58 @@
 export const week2 = {
   id: 2,
-  title: "Backend Development Basics",
+  title: "Adjusting to RHU Workflow & Improving Efficiency",
   category: "2nd Week",
-  image: "/picture/week_2.jpg",
+  image: "/picture/week_2/1.jpg",
   date: "September 09, 2024 - September 13, 2024",
-  description: "Began working on backend development. Learned RESTful API design principles and created my first endpoints with Express.js.",
+  description: "On my second week, I quickly adapted to RHU's fast-paced workflow, steadily improving my efficiency in handling tasks like iClinicSys encoding and PhilHealth eligibility checks. I also realized how positive and nice the environment was, with the doctors, nurses, and staff being genuinely kind and supportive.",
   content: `
-    <h2>Diving Into Backend Development</h2>
-    <p>This week marked my transition from onboarding to hands-on development work. I was assigned to work on the backend team, focusing on expanding our API capabilities for the upcoming product release.</p>
-    
-    <h3>Learning RESTful API Design</h3>
-    <p>I spent significant time understanding REST principles and best practices. This included:</p>
+    <h2>Getting Comfortable with RHU Workflow</h2>
+    <p>My second week at Gubat RHU was all about finding my rhythm. The environment was fast-paced but welcoming, and I started adjusting well to the daily tasks assigned to us interns.</p>
+
+    <h3>Improving Efficiency in Regular Tasks</h3>
+    <p>I steadily improved in performing key responsibilities like:</p>
     <ul>
-      <li>Resource-oriented architecture</li>
-      <li>Proper HTTP method usage</li>
-      <li>Status code implementation</li>
-      <li>API versioning strategies</li>
-      <li>Authentication and authorization patterns</li>
+      <li>Encoding patient data accurately into the iClinicSys system</li>
+      <li>Conducting PhilHealth eligibility checks smoothly</li>
+      <li>Organizing patient records and documents efficiently</li>
+      <li>Assisting the staff in daily operations and administrative work</li>
     </ul>
-    
-    <h3>First Endpoints with Express.js</h3>
-    <p>With guidance from my mentor, I created my first set of API endpoints using Express.js. The process involved:</p>
-    <ul>
-      <li>Setting up route handlers</li>
-      <li>Implementing middleware for request validation</li>
-      <li>Connecting to the database using Mongoose</li>
-      <li>Handling errors and edge cases</li>
-      <li>Writing documentation for the endpoints</li>
-    </ul>
-    
-    <h3>Code Review Experience</h3>
-    <p>I submitted my first pull request and received valuable feedback from senior developers. This helped me understand the team's coding standards and expectations. The review process was constructive and educational.</p>
-    
-    <h3>Challenges and Solutions</h3>
-    <p>I faced some challenges with asynchronous operations and error handling. After researching and discussing with teammates, I implemented async/await patterns and created a centralized error handler to improve code quality.</p>
-    
+
+    <h3>Positive Environment & Supportive Staff</h3>
+    <p>One thing I noticed this week was how genuinely supportive the RHU staff are. The doctors, nurses, and admin personnel were approachable and kind, always ready to lend a hand or offer advice when needed. This made adjusting to the workflow much easier and enjoyable.</p>
+
+    <h3>Learning Curve & Growth</h3>
+    <p>Although I encountered a few hiccups when handling certain forms or patient cases, I was able to quickly learn from the staff and correct any mistakes. Each day, I noticed myself becoming faster and more confident with the encoding process.</p>
+
     <h3>Looking Ahead</h3>
-    <p>Next week, I'll be exploring the frontend framework and learning how to integrate it with the APIs I've built. I'm looking forward to seeing the full-stack development process in action.</p>
+    <p>Next week, I aim to refine my familiarity with different RHU documents and hopefully master reading doctors' handwriting, which I noticed is key to being even more efficient.</p>
   `,
   gallery: [
     {
-      image: "/picture/week2_api_design.jpg",
-      caption: "Whiteboarding session for API design planning"
+      type: "image",
+      source: "/picture/week_2/1.jpg",
+      caption: "Focusing on encoding patient records into iClinicSys"
     },
     {
-      image: "/picture/week2_code.jpg",
-      caption: "Working on my first Express.js endpoints"
+      type: "image",
+      source: "/picture/week_2/2.jpg",
+      caption: "Focusing on encoding patient records into iClinicSys"
     },
     {
-      image: "/picture/week2_mentor.jpg",
-      caption: "Code review session with my mentor"
+      type: "image",
+      source: "/picture/week_2/3.jpg",
+      caption: "Focusing on encoding patient records into iClinicSys"
     },
     {
-      image: "/picture/week2_documentation.jpg",
-      caption: "API documentation I created using Swagger"
-    }
+      type: "image",
+      source: "/picture/week_2/4.jpg",
+      caption: "Focusing on encoding patient records into iClinicSys"
+    },
+    {
+      type: "image",
+      source: "/picture/week_2/5.jpg",
+      caption: "Focusing on encoding patient records into iClinicSys"
+    },
+
   ]
-  };
+};
