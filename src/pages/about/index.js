@@ -1,9 +1,9 @@
 import { Typography, Container, Box, Grid, Paper, Avatar, useTheme, useMediaQuery, alpha } from "@mui/material";
-import SchoolIcon from '@mui/icons-material/School';
 import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
 import PersonIcon from '@mui/icons-material/Person';
 import WorkIcon from '@mui/icons-material/Work';
 import EventNoteIcon from '@mui/icons-material/EventNote';
+import SchoolIcon from '@mui/icons-material/School';
 
 // About component with improved UI design
 export default function About({ aboutRef }) {
@@ -87,24 +87,15 @@ export default function About({ aboutRef }) {
             mx: 'auto'
           }}
         >
-          <Box 
-            sx={{
-              display: 'inline-flex',
-              p: 1.5,
-              borderRadius: '50%',
-              bgcolor: alpha(theme.palette.primary.main, 0.12),
-              mb: 3
-            }}
-          >
-            <SchoolIcon 
-              color="primary" 
-              fontSize="large" 
+          <SchoolIcon
+              
               sx={{ 
-                transform: 'rotate(-5deg)',
-                fontSize: '2.2rem'
+                width: 50,
+                height: 50,
+                borderRadius: '50%',
+                color: theme.palette.primary.main,
               }}
             />
-          </Box>
           
           <Typography 
             variant="h2" 
@@ -145,10 +136,104 @@ export default function About({ aboutRef }) {
             My OJT Experience at Gubat Rural Health Unit and Birthing Home
           </Typography>
         </Box>
+
+        <Grid 
+          container 
+          justifyContent="center" 
+          alignItems="center" 
+          spacing={1} 
+          sx={{ mb: 6 }}
+          >
+          <Grid 
+            item 
+            xs={12} 
+            md={5} 
+            sx={{ 
+              display: 'flex', 
+              justifyContent: 'center',
+              alignItems: 'center',
+              pr: { md: 3 }
+            }}
+          >
+            <Box
+              component="img"
+              src="ccs.webp"
+              alt="College of Computer Studies"
+              sx={{
+                width: { xs: '50%', sm: '40%', md: '55%' },
+                height: 'auto',
+                objectFit: 'contain'
+              }}
+            />
+          </Grid>
+          <Grid 
+            item 
+            xs={12} 
+            md={2} 
+            sx={{ 
+              display: 'flex', 
+              justifyContent: 'center',
+              alignItems: 'center'
+            }}
+          >
+            <Box
+              sx={{
+                width: '30px',
+                height: '2px',
+                bgcolor: 'primary.main',
+                mx: 1,
+                transform: { xs: 'rotate(90deg)', md: 'rotate(0deg)' },
+                my: { xs: 2, md: 0 }
+              }}
+            />
+          </Grid>
+          <Grid 
+            item 
+            xs={12} 
+            md={5} 
+            sx={{ 
+              display: 'flex', 
+              justifyContent: 'center',
+              alignItems: 'center',
+              pl: { md: 3 }
+            }}
+          >
+            <Box
+              sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                width: '100%',
+                gap: { xs: 1, sm: 2 }
+              }}
+            >
+              <Box
+                component="img"
+                src="lgu.svg"
+                alt="Local Government Unit"
+                sx={{
+                  width: { xs: '40%', sm: '35%', md: '45%' },
+                  height: 'auto',
+                  objectFit: 'contain'
+                }}
+              />
+              <Box
+                component="img"
+                src="grhu.svg"
+                alt="Gubat Rural Health Unit"
+                sx={{
+                  width: { xs: '40%', sm: '35%', md: '45%' },
+                  height: 'auto',
+                  objectFit: 'contain'
+                }}
+              />
+            </Box>
+          </Grid>
+          </Grid>
+        
         
         {/* Main Content Section with improved Grid Layout */}
         <Grid container spacing={{ xs: 4, md: 6 }} sx={{ maxWidth: "1200px", mx: "auto" }}>
-          {/* First Column - Introduction */}
           <Grid item xs={12} md={5}>
             <Paper 
               elevation={0} 
@@ -172,10 +257,21 @@ export default function About({ aboutRef }) {
                     color: theme.palette.primary.main,
                     mr: 2.5,
                     width: 56,
-                    height: 56
+                    height: 56,
+                    padding: 0.5  // Add some padding for the image
                   }}
                 >
-                  <SchoolIcon fontSize="medium" />
+                  {/* Replace SchoolIcon with CCS badge */}
+                  <Box
+                    component="img"
+                    src="ccs.webp"
+                    alt="College of Computer Studies"
+                    sx={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'contain'
+                    }}
+                  />
                 </Avatar>
                 <Typography variant="h5" fontWeight="600" color="primary.main">
                   The Program
@@ -201,16 +297,25 @@ export default function About({ aboutRef }) {
               <Box sx={{ display: 'flex', alignItems: 'center', mb: 4 }}>
                 <Avatar 
                   sx={{ 
-                    bgcolor: alpha(theme.palette.secondary.main, 0.12),
-                    color: theme.palette.secondary.main,
+                    bgcolor: alpha(theme.palette.primary.main, 0.12),
+                    color: theme.palette.primary.main,
                     mr: 2.5,
                     width: 56,
                     height: 56
                   }}
                 >
-                  <LocalHospitalIcon fontSize="medium" />
+                  <Box
+                    component="img"
+                    src="grhu.svg"
+                    alt="College of Computer Studies"
+                    sx={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'contain'
+                    }}
+                  />
                 </Avatar>
-                <Typography variant="h5" fontWeight="600" color="secondary.main">
+                <Typography variant="h5" fontWeight="600" color="primary.main">
                   The Facility
                 </Typography>
               </Box>
