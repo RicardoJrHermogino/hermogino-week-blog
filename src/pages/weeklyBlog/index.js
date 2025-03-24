@@ -145,7 +145,7 @@ export default function WeeklyBlogSection() {
               mx: 'auto'
             }}
           >
-            A weekly record of my progress, challenges, and achievements during my software development internship
+            A weekly record of my progress, challenges, and achievements in government office duties  and software development during my internship 
           </Typography>
         </Box>
 
