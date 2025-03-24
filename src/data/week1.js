@@ -39,6 +39,21 @@ export const week1 = {
     gallery: [
       {
         type: "image",
+        source: "/picture/week_1/1.jpg",
+        caption: "Training session with Kuya Jay Ar Jarabejo on IClinicSys encoding"
+      },
+      {
+        type: "image",
+        source: "/picture/week_1/2.jpg",
+        caption: "Training session with Kuya Jay Ar Jarabejo on IClinicSys encoding"
+      },
+      {
+        type: "image",
+        source: "/picture/week_1/3.jpg",
+        caption: "Training session with Kuya Jay Ar Jarabejo on IClinicSys encoding"
+      },
+      {
+        type: "image",
         source: "/picture/week_1/week_1.0.jpg",
         caption: "Training session with Kuya Jay Ar Jarabejo on IClinicSys encoding"
       },

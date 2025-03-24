@@ -6,7 +6,7 @@ export const week8 = {
   date: "February 28, 2025",
   description: "Continued encoding patient records in iClinicSys and handled PhilHealth eligibility claims by verifying Individual Treatment Records (ITR) for proper registration under Gubat RHU.",
   content: `
-    <h2>Finalizing Patient Records & Handling PhilHealth Claims</h2>
+    <h2>Finalizing Patient Records &  Handling PhilHealth Claims</h2>
     <p>As the internship neared its close, I focused on refining my efficiency in encoding patient records through iClinicSys. My tasks this week involved not just data entry, but also ensuring that all information aligned with RHU’s standards and protocols.</p>
     
     <h3>PhilHealth Eligibility Verification</h3>
@@ -22,6 +22,26 @@ export const week8 = {
     {
       type: "image",
       source: "/picture/week_8/1.jpg",
+      caption: "Verifying Individual Treatment Records for PhilHealth eligibility"
+    },
+    {
+      type: "image",
+      source: "/picture/week_8/2.jpg",
+      caption: "Verifying Individual Treatment Records for PhilHealth eligibility"
+    },
+    {
+      type: "image",
+      source: "/picture/week_8/3.jpg",
+      caption: "Verifying Individual Treatment Records for PhilHealth eligibility"
+    },
+    {
+      type: "image",
+      source: "/picture/week_8/4.jpg",
+      caption: "Verifying Individual Treatment Records for PhilHealth eligibility"
+    },
+    {
+      type: "image",
+      source: "/picture/week_8/5.jpg",
       caption: "Verifying Individual Treatment Records for PhilHealth eligibility"
     },
     

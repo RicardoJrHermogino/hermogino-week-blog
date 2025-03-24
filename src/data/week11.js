@@ -4,7 +4,7 @@ export const week11 = {
   category: "11th Week",
   image: "/picture/week_11/1.jpg",
   date: "February 7, 2025",
-  description: "This week, we completed the development of the RHU system while simultaneously handling our regular tasks at the RHU. Alongside assisting with day-to-day operations, we dedicated time to thorough testing and debugging, ensuring the system's readiness. By week's end, we officially wrapped up the system development.",
+  description: "This week, we completed the development of the RHU system while simultaneously handling our regular tasks at the RHU. Alongside assisting with day-to-day operations, we dedicated time to thorough testing and debugging, ensuring the system's readiness. We also attended the LGU Gubat-wide Christmas party held at Encinas Pavilion, making the week extra memorable.",
   content: `
     <h2>Wrapping Up Development Amid Daily RHU Responsibilities</h2>
     <p>Our eleventh week was a delicate balancing act. While assisting the RHU staff with their usual daily tasks—whether encoding records, accommodating patients, or organizing files—we were also focused on finalizing the RHU system we've been developing over the past weeks.</p>
@@ -20,11 +20,16 @@ export const week11 = {
     
     <h3>System Completion</h3>
     <p>By the end of the week, with all tests passed and RHU responsibilities fulfilled, we confidently declared the system development phase complete. Seeing the project come together while still contributing to the RHU’s day-to-day operations made the achievement even more rewarding.</p>
+
+    <h3>LGU Gubat Christmas Party at Encinas Pavilion</h3>
+    <p>Another highlight of this week was the grand Christmas party hosted for all departments under LGU Gubat. Held at Encinas Pavilion, Gubat Municipal Hall, the celebration was festive and lively, filled with entertaining shows and an abundance of delicious food. I was seated at a table alongside a few of the RHU midwives, nurses, IT personnel, and staff. Sharing laughs and stories with them outside the usual work environment felt heartwarming—it made me realize how tightly-knit and supportive the RHU community is.</p>
+    
+    <p>What made the event even more special was how welcoming everyone was—it truly felt like we were part of the LGU Gubat family, not just interns. Experiencing firsthand how employees gather, celebrate, and enjoy moments like this gave me a clearer glimpse of real-life workplace culture. It made me realize how camaraderie and shared celebrations play an essential role in professional life.</p>
   `,
   gallery: [
     {
       type: "video",
-      source: "/picture/week_11/1.mp",
+      source: "/picture/week_11/1.mp4",
     },
     {
       type: "image",
@@ -50,6 +55,25 @@ export const week11 = {
       type: "image",
       source: "/picture/week_11/7.png",
     },
-   
+    {
+      type: "image",
+      source: "/picture/week_11/8.jfif",
+    },
+    {
+      type: "image",
+      source: "/picture/week_11/9.jfif",
+    },
+    {
+      type: "image",
+      source: "/picture/week_11/10.jfif",
+    },
+    {
+      type: "image",
+      source: "/picture/week_11/11.jfif",
+    },
+    {
+      type: "image",
+      source: "/picture/week_11/12.jfif",
+    },
   ]
 };

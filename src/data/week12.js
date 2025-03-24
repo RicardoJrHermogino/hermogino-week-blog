@@ -30,17 +30,22 @@ export const week12 = {
     },
     {
       type: "image",
-      source: "/picture/week_12/3.jpg",
-      caption: "Final system review with RHU staff"
-    },
-    {
-      type: "image",
       source: "/picture/week_12/5.jpg",
       caption: "Receiving certificate of completion"
     },
     {
       type: "image",
       source: "/picture/week_12/7.jpg",
+      caption: "Commemorative photo with Dr. Ronald E. Ferreras and Sir Jay-Ar Jarabejo"
+    },
+    {
+      type: "image",
+      source: "/picture/week_12/3.jfif",
+      caption: "Receiving certificate of completion"
+    },
+    {
+      type: "image",
+      source: "/picture/week_12/4.jfif",
       caption: "Commemorative photo with Dr. Ronald E. Ferreras and Sir Jay-Ar Jarabejo"
     },
   ]

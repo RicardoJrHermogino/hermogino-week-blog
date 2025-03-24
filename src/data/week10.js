@@ -1,10 +1,10 @@
 export const week10 = {
   id: 10,
-  title: "Start of RHU System Frontend Development & Tech Stack Finalization",
+  title: "Start of RHU System Frontend Development & Farewell to Co-Interns",
   category: "10th Week",
-  image: "/picture/week_10/1.jpg",
+  image: "/picture/week_10/7.jpg",
   date: "February 7, 2025",
-  description: "We formally began RHU system development this week. The tech stack was finalized: Next.js for frontend, Material UI for design, Next.js API Routes for backend operations, and MongoDB as the database. We started building key frontend components and laid the groundwork for backend integration.",
+  description: "We officially began RHU system development this week while finalizing our tech stack. It was also the last week of our co-interns' OJT. A Christmas party was held, but since most of them had already finished, only Chryst Ian Ereve, Kenneth Fazon, and I got to join. The food was abundant and delicious—a perfect send-off for them and a memorable moment for us.",
   content: `
     <h2>Starting the RHU System Development Journey</h2>
     <p>This week marked a crucial turning point—we officially kicked off the RHU system development. After careful consideration, we finalized the tech stack to ensure scalability and smooth performance:</p>
@@ -34,6 +34,9 @@ export const week10 = {
       <li>Supporting data entry for new patient visits</li>
     </ul>
     <p>It was a week of shifting gears—switching from coding in the morning to real-world data management by afternoon. That hands-on exposure kept the development grounded in actual RHU workflows.</p>
+
+    <h3>Last Week of Co-Interns & Christmas Party</h3>
+    <p>This week was also bittersweet, it marked the final OJT week for most of our classmates. Since they had already completed their required hours, they were no longer around to join the Christmas party organized exclusively for our department, the Gubat Rural Health Unit and Birthing Home. Only Chryst Ian Ereve, Kenneth Fazon, and I were still active interns, so we were invited to celebrate with the staff. The party was lively, with plenty of delicious food, making it even more memorable for the few of us remaining.</p>
 
     <h3>Looking Ahead</h3>
     <p>Next week’s focus will be on expanding frontend features and tightening backend connectivity, making sure both sides are ready to work in sync as development progresses.</p>
@@ -74,8 +77,26 @@ export const week10 = {
       source: "/picture/week_10/6.jpg",
       caption: "Balancing RHU tasks alongside system development"
     },
-    
-    
+    {
+      type: "image",
+      source: "/picture/week_10/11.jpg",
+      caption: "Balancing RHU tasks alongside system development"
+    },
+    {
+      type: "image",
+      source: "/picture/week_10/12.jfif",
+      caption: "Balancing RHU tasks alongside system development"
+    },
+    {
+      type: "image",
+      source: "/picture/week_10/13.jfif",
+      caption: "Balancing RHU tasks alongside system development"
+    },
+    {
+      type: "image",
+      source: "/picture/week_10/14.jfif",
+      caption: "Balancing RHU tasks alongside system development"
+    },
   ]
-  
 };
+  

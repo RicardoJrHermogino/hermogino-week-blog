@@ -36,6 +36,26 @@ export const week9 = {
       source: "/picture/week_9/2.jpg",
       caption: "Continuing patient data encoding in iClinicSys"
     },
+    {
+      type: "image",
+      source: "/picture/week_9/4.jpg",
+      caption: "Continuing patient data encoding in iClinicSys"
+    },
+    {
+      type: "image",
+      source: "/picture/week_9/5.jpg",
+      caption: "Continuing patient data encoding in iClinicSys"
+    },
+    {
+      type: "image",
+      source: "/picture/week_9/6.jfif",
+      caption: "Continuing patient data encoding in iClinicSys"
+    },
+    {
+      type: "image",
+      source: "/picture/week_9/7.jfif",
+      caption: "Continuing patient data encoding in iClinicSys"
+    },
   ]
 };
   

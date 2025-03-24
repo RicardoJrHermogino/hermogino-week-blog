@@ -2,7 +2,7 @@ export const week5 = {
   id: 5,
   title: "RHU Workflow Mastery",
   category: "5th Week",
-  image: "/picture/week_5/1.jpg",
+  image: "/picture/week_5/3.jpg",
   date: "February 7, 2025",
   description: "By this week, I fully mastered the RHU’s workflow—from patient encoding to handling records smoothly. Tasks felt automatic; I rarely needed to ask supervisors for clarification, even when unusual documents or issues came up. Everything ran efficiently, making my contributions solid and independent.",
   content: `
@@ -30,22 +30,27 @@ export const week5 = {
   gallery: [
     {
       type: "image",
-      source: "/picture/week5_records_mastery.jpg",
-      caption: "Efficiently handling patient records with confidence"
-    },
-    {
-      type: "image",
-      source: "/picture/week5_encoding_fast.jpg",
+      source: "/picture/week_5/1.png",  
       caption: "Encoding tasks felt smooth and automatic"
     },
     {
       type: "image",
-      source: "/picture/week5_team_support.jpg",
+      source: "/picture/week_5/2.jpg",  
+      caption: "Encoding tasks felt smooth and automatic"
+    },
+    {
+      type: "image",
+      source: "/picture/week_5/3.jpg",
+      caption: "Encoding tasks felt smooth and automatic"
+    },
+    {
+      type: "image",
+      source: "/picture/week_5/6.jfif",
       caption: "Providing support to RHU staff during busy hours"
     },
     {
       type: "image",
-      source: "/picture/week5_problem_solving.jpg",
+      source: "/picture/week_5/7.jfif",
       caption: "Independently resolving unusual document cases"
     }
   ]

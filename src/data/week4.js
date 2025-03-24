@@ -2,7 +2,7 @@ export const week4 = {
   id: 4,
   title: "Building Confidence in RHU Workflow",
   category: "4th Week",
-  image: "/picture/week_4/1.jpg",
+  image: "/picture/week_4/2.jpg",
   date: "January 31, 2025",
   description: "This week, we stayed consistent with our regular RHU tasks—encoding patient data, organizing records, and supporting daily operations. I started becoming more confident and quicker, especially in understanding doctors’ handwriting on prescriptions and diagnoses, which helped me complete tasks faster without second-guessing.",
   content: `
@@ -33,6 +33,30 @@ export const week4 = {
       source: "/picture/week_4/1.jpg",
       caption: "Organizing patient records efficiently"
     },
-    
+    {
+      type: "image",
+      source: "/picture/week_4/2.jpg",
+      caption: "Organizing patient records efficiently"
+    },
+    {
+      type: "image",
+      source: "/picture/week_4/3.jpg",
+      caption: "Organizing patient records efficiently"
+    },
+    {
+      type: "image",
+      source: "/picture/week_4/4.jpg",
+      caption: "Organizing patient records efficiently"
+    },
+    {
+      type: "image",
+      source: "/picture/week_4/5.jpg",
+      caption: "Organizing patient records efficiently"
+    },
+    {
+      type: "image",
+      source: "/picture/week_4/6.jpg",
+      caption: "Organizing patient records efficiently"
+    },
   ]
 };

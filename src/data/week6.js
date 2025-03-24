@@ -31,6 +31,26 @@ export const week6 = {
       source: "/picture/week_6/2.jpg",
       caption: "Continuing regular RHU tasks"
     },
+    {
+      type: "image",
+      source: "/picture/week_6/3.jpg",
+      caption: "Continuing regular RHU tasks"
+    },
+    {
+      type: "image",
+      source: "/picture/week_6/4.jfif",
+      caption: "Continuing regular RHU tasks"
+    },
+    {
+      type: "image",
+      source: "/picture/week_6/5.jfif",
+      caption: "Continuing regular RHU tasks"
+    },
+    {
+      type: "image",
+      source: "/picture/week_6/6.jfif",
+      caption: "Continuing regular RHU tasks"
+    },
    
   ]
 };

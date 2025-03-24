@@ -23,24 +23,24 @@ export default function WeeklyBlogSection() {
       description: "On my second week, I quickly adapted to RHU's fast-paced workflow, steadily improving my efficiency in handling tasks like iClinicSys encoding and PhilHealth eligibility checks. I also realized how positive and nice the environment was, with the doctors, nurses, and staff being genuinely kind and supportive."
     },    
     {
-      id: 3,
-      title: "Record Organization & Encoding Tasks",
-      category: "3rd Week",
-      image: "/picture/week_3/3.jpg",
-      description: "With fewer tasks this week, Sir Jay Ar assigned me and my classmate Kenneth Fazon to organize and file paper records based on their codes and numbers. After finishing, we returned to our usual encoding duties."
-    },    
+      "id": 3,
+      "title": "Record Organization & Encoding Tasks",
+      "category": "3rd Week",
+      "image": "/picture/week_3/3.jpg",
+      "description": "With fewer tasks this week, Sir Jay Ar assigned me and Kenneth Fazon to organize and file paper records. After that, we resumed our usual encoding duties. Ma’am Rona also let me observe as she fixed a PC that wouldn’t power on due to a faulty PSU. She even let me replace the PSU myself and reconnect the cables—giving me hands-on experience outside our usual tasks."
+    },       
     {
       id: 4,
       title: "Building Confidence in RHU Workflow",
       category: "4th Week",
-      image: "/picture/week_4/1.jpg",
+      image: "/picture/week_4/2.jpg",
       description: "This week, we stayed consistent with our regular RHU tasks—encoding patient data, organizing records, and supporting daily operations. I started becoming more confident and quicker, especially in understanding doctors’ handwriting on prescriptions and diagnoses, which helped me complete tasks faster without second-guessing."
     },
     {
       id: 5,
       title: "RHU Workflow Mastery",
       category: "5th Week",
-      image: "/picture/week_1.jpg",
+      image: "/picture/week_5/3.jpg",
       description: "By this week, I fully mastered the RHU’s workflow—from patient encoding to handling records smoothly. Tasks felt automatic; I rarely needed to ask supervisors for clarification, even when unusual documents or issues came up. Everything ran efficiently, making my contributions solid and independent."
     },
     {
