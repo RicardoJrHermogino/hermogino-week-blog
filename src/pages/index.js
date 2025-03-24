@@ -35,7 +35,6 @@ export default function Home() {
       <Head>
         <title>Hermogino Weekly Blog</title>
         <meta name="description" content="My weekly blog for my internship journey" />
-        <link rel="preload" href="/video/ojt_video.mp4" as="video" type="video/mp4" />
       </Head>
 
       {/* Hero Section */}
@@ -69,7 +68,6 @@ export default function Home() {
           component="video"
           autoPlay
           muted
-          priority 
           loop
           sx={{
             position: "absolute",

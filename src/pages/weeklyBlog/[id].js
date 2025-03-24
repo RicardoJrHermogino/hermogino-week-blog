@@ -97,7 +97,6 @@ export default function BlogDetail() {
 
       {/* Hero Section */}
       <Box
-        priority 
         sx={{
           height: '60vh',
           position: 'relative',
@@ -257,7 +256,6 @@ export default function BlogDetail() {
                     {item.type === 'image' ? (
                       // IMAGE
                       <Box
-                        priority 
                         sx={{
                           paddingTop: '75%',
                           width: '100%',
@@ -283,7 +281,6 @@ export default function BlogDetail() {
                     ) : (
                       // VIDEO
                       <Box
-                        priority 
                         sx={{
                           position: 'relative',
                           width: '100%',
@@ -292,7 +289,6 @@ export default function BlogDetail() {
                         }}
                       >
                         <video
-                          priority 
                           autoPlay
                           loop
                           muted
