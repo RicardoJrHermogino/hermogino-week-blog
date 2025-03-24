@@ -191,6 +191,7 @@ export default function WeeklyBlogSection() {
                 height="180"
                 image={week.image}
                 alt={week.title}
+                priority 
                 sx={{
                   objectFit: 'cover',
                 }}
